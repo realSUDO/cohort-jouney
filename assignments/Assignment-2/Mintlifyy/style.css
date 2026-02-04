@@ -34,7 +34,7 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	border: 3px solid red;
+	border: 3px solid transparent;
 	height: 65px;
 	z-index: 100;
 	backdrop-filter: blur(14px);
@@ -43,7 +43,7 @@ header {
 
 .nav {
 	display: grid;
-	border: 3px solid blue;
+	border: 3px solid transparent;
 	margin: 0 auto;
 	grid-template-columns: 2.5fr 1fr;
 	align-items: center;
@@ -60,21 +60,21 @@ header {
 .nav > :nth-child(1) {
 	display: flex;
 	justify-content: space-between;
-	border: 3px solid green;
+	border: 3px solid transparent;
 }
 
 .nav > :nth-child(2) {
 	display: flex;
 	justify-content: flex-end;
-	gap: 1rem;
-	border: 3px solid orange;
+	height: 70%;
+	gap: 0.5rem;
 }
 .button1 {
 	display: flex;
 	justify-content: space-between;
 }
 .button1 > button {
-	padding: 8px 13px ;
+	padding: 8px 13.7px ;
 	border: none;
 	background-color: transparent;
 	color: var(--text-white);
@@ -87,19 +87,27 @@ header {
 }
 
 .button2 > button {
-	padding: 8px 13px ;
+	height: 35px;
+	display: flex;
+	align-items : center;
+	padding: 7px 14px ;
 	border: none;
 	color: var(--text-white);
-	border-radius: 5px;
+	border-radius: 3.6px;
 	cursor: pointer;
 	font-family: var(--font-family);
-	font-size: 15px;
-	font-weight: 550;
+	font-size: 14.5px;
+	font-weight: 500;
+	border-radius: 20px;
 	transition: background-color 0.3s ease;
 }
 .button2 > button:first-child {
-	background-color: var(--bg-color);
+	background-color: rgba(255, 255, 255, 0.2);
 	
+}
+.button2 > button:last-child {
+	background-color: rgba(255, 255, 255);
+    color : #000;
 }
 
 

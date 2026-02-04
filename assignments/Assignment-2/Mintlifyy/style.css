@@ -1,0 +1,40 @@
+:root {
+  --bg-color: #f4f5f4;
+  --color-darkgreen: #1d4c56;
+  --color-lightgreen: #45bc97;
+  --color-badge: #96b099;
+  --color-brown: #b4ab48;
+  --color-darkbrown: #88600e;
+  --color-lightbrown: #d1d092;
+  --color-subheading: #08090acc;
+  --color-blue: #3a88c8;
+  --color-lightpink: #bca794;
+  --color-black: #000;
+
+  --text-white: #f4f5f4;
+}
+
+* {
+	/* restting user-agent stylesheet */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+}
+
+.bgimage {
+	background-image: url(assets/bg-light.svg);
+	z-index: -1;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.hero {
+	position: relative;
+	isolation: isolate;
+}

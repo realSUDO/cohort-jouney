@@ -216,6 +216,7 @@ header {
 	top: 20%;
 	display: flex;
 	justify-content: center;
+	background-color: rgba(255 , 0 , 0 , 0.3);
 	width: 100%;
 }
 .hero > .content > .text > h1 > span {
@@ -238,9 +239,37 @@ header {
 }
 
 
-.hero > .content > .text > h2 {
+.hero > .content >  .subtext{
+	position: absolute;
+	top: 50.45%;
+	display: flex;
+	justify-content: center;
+	background-color: rgba(39 , 45 , 150 , 0.3);
+	width: 100%;
+	padding: 0.5rem 0;
+}
+
+.hero > .content > .subtext > h2 > span {
+	display: block;
+}
+
+.hero > .content > .subtext > h2 > :last-child{
+	transform: translateY(-0.15rem);
+}
+.hero > .content > .subtext > h2 {
+	width: 50rem;
+	border: 1px solid white;
+	padding : 0.5rem 0;
+	font-family: var(--font-family);
+	color: #fff;
+	text-align: center;
+	font-size: 1.11rem;
+	font-weight: 480;
+	line-height: 1.8rem;
+
 
 }
+
 
 
 

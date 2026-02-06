@@ -147,7 +147,6 @@ header {
 	top: -164px;
 	left: 50%;
 	transform: translateX(-50%);
-	height: auto;
 	width: 100%;
 	z-index: -1;
 }
@@ -352,7 +351,7 @@ header {
 
 main {
 	position: absolute;
-	top : 850px;
+	top : 1220px;
 	width: 100%;
 }
 .sponsors {
@@ -360,7 +359,6 @@ main {
 	justify-content: center;
 	align-content: center;
 	position: absolute;
-	top : 280px;
 	width: 100%;
 	height: 20rem;
 }
@@ -411,3 +409,35 @@ main {
 /* --------- sponsors section ends --------- */
 
 
+.desc {
+	padding: 0.5rem 0.25rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top : 25rem;
+	width: 100%;
+	padding: 0.5rem 0;
+	font-family: var(--font-family);
+}
+
+.desc>strong {
+	margin : 0.5rem 0;
+	margin-bottom: 0.2rem;
+	font-size: 2.4rem;
+	font-weight: 580;
+	color: var(--color-black);
+	margin-bottom: 0.5rem;
+
+}
+.desc>span {
+	font-size: 1rem;
+	font-weight: 350;
+	line-height: 1.6rem;
+	color: var(--color-black);
+	text-align: center;
+
+}
+
+/** -------- descirption section ends --------- */

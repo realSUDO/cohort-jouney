@@ -45,7 +45,6 @@ header {
 	grid-template-columns: 2.5fr 1fr;
 	align-items: center;
 	height: 100%;
-	/* width: 56.2vw; */
 	width: 1067px;
 	position: sticky;
 	top: 0;
@@ -153,12 +152,10 @@ header {
 	z-index: -1;
 }
 
-
 .content {
-	position: relative ;
-	top : 65px;
+	position: relative;
+	top: 65px;
 	height: 32rem;
-
 }
 
 /*--------- badge starts ---------*/
@@ -169,8 +166,8 @@ header {
 	padding-right: 0.5rem;
 	align-items: center;
 	position: absolute;
-	top : 2.0rem;
-	left : 50%;
+	top: 2rem;
+	left: 50%;
 	transform: translate(-50%);
 	background-color: rgba(0, 0, 0, 0.11);
 	border-radius: 1rem;
@@ -180,22 +177,23 @@ header {
 	gap: 0.6rem;
 	text-decoration: none;
 	color: var(--text-white);
-	
-}
-.badge:hover{
-	background-color: rgba(50, 50, 50, 0.11) ;
 }
 
-.badge > span {
+.badge:hover {
+	background-color: rgba(50, 50, 50, 0.11);
+}
+
+.badge>span {
 	background-color: #108766;
 	border-radius: 0.9rem;
 	padding: 0.25rem 0.5rem;
-
 }
-.badge > p {
+
+.badge>p {
 	font-size: 0.87rem;
 }
-.badge > .imgbox {
+
+.badge>.imgbox {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -206,69 +204,149 @@ header {
 	width: 14px;
 	height: 14px;
 }
-.badge > .imgbox > img {
+
+.badge>.imgbox>img {
 	width: 12px;
 }
+
 /*----------------- badge ends ---------------*/
 
-.hero > .content >  .text  {
+.hero>.content>.text {
 	position: absolute;
 	top: 20%;
 	display: flex;
 	justify-content: center;
-	background-color: rgba(255 , 0 , 0 , 0.3);
 	width: 100%;
 }
-.hero > .content > .text > h1 > span {
+
+.hero>.content>.text>h1>span {
 	display: block;
 }
 
-.hero > .content > .text > h1 > :last-child{
+.hero>.content>.text>h1> :last-child {
 	transform: translateY(-0.25rem);
 }
-.hero > .content >  .text > h1 {
+
+.hero>.content>.text>h1 {
 	font-family: var(--font-family);
 	font-size: 4rem;
 	letter-spacing: -0.02em;
 	font-weight: 600;
 	color: #fff;
-	border : 1px solid transparent;
+	border: 1px solid transparent;
 	width: 50rem;
 	text-align: center;
-
 }
 
-
-.hero > .content >  .subtext{
+.hero>.content>.subtext {
 	position: absolute;
 	top: 50.45%;
 	display: flex;
 	justify-content: center;
-	background-color: rgba(39 , 45 , 150 , 0.3);
 	width: 100%;
 	padding: 0.5rem 0;
 }
 
-.hero > .content > .subtext > h2 > span {
+.hero>.content>.subtext>h2>span {
 	display: block;
 }
 
-.hero > .content > .subtext > h2 > :last-child{
+.hero>.content>.subtext>h2> :last-child {
 	transform: translateY(-0.15rem);
 }
-.hero > .content > .subtext > h2 {
+
+.hero>.content>.subtext>h2 {
 	width: 50rem;
-	border: 1px solid white;
-	padding : 0.5rem 0;
+	border: 1px solid transparent;
+	padding: 0.5rem 0;
 	font-family: var(--font-family);
 	color: #fff;
 	text-align: center;
 	font-size: 1.11rem;
 	font-weight: 480;
 	line-height: 1.8rem;
-
-
 }
+
+/* --------- text area ends --------- */
+
+.content>.email {
+	position: absolute;
+	top: 68.5%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 0.5rem 0;
+}
+
+.content>.email>form {
+	position: relative;
+	z-index: 0;
+	display: flex;
+	height: 2.5rem;
+	width: 22.5rem;
+	transform: translateY(0.3rem);
+
+	gap: 0.5rem;
+}
+
+.content>.email>form>input {
+	width: 100%;
+	height: 100%;
+	padding: 0.5rem 1.1rem;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: none;
+	border-radius: 1.5rem;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+	font-family: var(--font-family);
+	font-size: 0.92rem;
+}
+
+.content>.email>form>input::placeholder {
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 0.94rem;
+}
+
+.content>.email>form>button {
+	z-index: 1;
+	padding : 0.48rem 0.85rem;
+	position: absolute;
+	right: 0.25rem;
+	top : 0.2rem;
+	border: none;
+	background-color: #fff;
+	border-radius: 1.1rem;
+	font-size: 0.92rem;
+	font-weight: 500;
+}
+
+.content > .heroimage  {
+	display: flex;
+	justify-content: center;
+	top : 80%;
+	position: absolute;
+	bottom: 0;
+	width: 100%;;
+	height: auto;
+}
+
+.content > .heroimage > img {
+	transform : translateY(5.9rem);
+	position : absolute;
+	border-radius: 1.3rem;
+	width: auto;
+	height: 653px;
+}
+
+.grad {
+	background-image: linear-gradient(to bottom, rgba(244, 245, 244, 0) 0%, rgba(244, 245, 244, 1) 30%);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70%;
+	opacity: 0.2;
+}
+
+/* --------- hero section ends --------- */
 
 
 
